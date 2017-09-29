@@ -1,0 +1,25 @@
+div#quiz-box{
+  height:auto;
+  width:100%;
+  padding-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+div#quiz-box p{
+  text-align: center;
+}
+.answer{
+  width: 280px;
+  height: 40px;
+  margin: 5px;
+  background-color: #dedede;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.3s;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 2px;
+}
+.answer:hover{
+  width: 295px;
+}

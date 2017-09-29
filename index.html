@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./css/default.css"></link>
+    <link rel="stylesheet" href="./css/palette.css"></link>
+    <link rel="stylesheet" href="./css/quiz.css"></link>
+    <title>Quizzer</title>
+  </head>
+  <body >
+    <div class="header default-primary-color">
+      <div id="logo">
+        <img class="icon" src="./images/white.svg"/>
+      </div>
+      <div id="menu">
+        <img class="icon" src="./images/menu.png"/>
+      </div>
+    </div>
+    <div class="main">
+      <div class="inner">
+        <div id="quiz-box">
+          <div id="question">
+            <p>This is a question</p>
+          </div>
+          <div id="answer-0" class="answer" onclick="answer(0)">This is an answer</div>
+          <div id="answer-1" class="answer" onclick="answer(1)">This is an answer</div>
+          <div id="answer-2" class="answer" onclick="answer(2)">This is an answer</div>
+          <div id="answer-3" class="answer" onclick="answer(3)">This is an answer</div>
+        </div>
+        <button id="butt" data-clicks="0">next</button>
+      </div>
+    </div>
+    <div class="footer"></div>
+    <script src="./scripts/runner.js"></script>
+  </body>
+</html>
