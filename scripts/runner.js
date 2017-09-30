@@ -18,17 +18,21 @@ document.querySelector('#butt').onclick = function(){
   }
   //onclick run load() and increment it by one
   this.setAttribute("data-clicks", +load()+1);
+  if (!load()){
+    this.innerHTML = "restart";
+  }
 }
 
 function load(){
-  var button   = document.querySelector('#butt');
-  var clicks   = button.getAttribute("data-clicks");
-  var box      = document.querySelector('#quiz-box');
+  var button = document.querySelector('#butt');
+  var clicks = button.getAttribute("data-clicks");
+  var box = document.querySelector('#quiz-box');
   //for(i=0;i<quiz.answers.length;i++){shuffle(quiz.answers[i]);}
   box.style.display = 'block';
   //after quiz is over replace box with 'complete'
   if(quiz.answers[clicks]==undefined){
     box.style.display = 'none';
+    return false;
   }else{
     //writes the values from the question and answers arrays
     document.querySelector('#question p').innerHTML = quiz.question[clicks];

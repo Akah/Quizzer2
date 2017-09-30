@@ -4,15 +4,19 @@ body{
   background-color: #f6f6f6;
 }
 .header{
+  margin-top:-60px;/*must = .inner{margin-top}*/
+  z-index: 3;
+  position: fixed;
   height:50px;
   width:100%;
-  box-shadow: 0 1px 5px;
+  box-shadow: 0 0px 5px 5px #aaa;
 }
 .main{
   width:100%:
   height:auto;
 }
 .inner{
+  margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
   width: 60%;
@@ -29,5 +33,44 @@ div#logo{
   float: left;
 }
 div#menu{
-  float: right;
+  float:right;
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+}
+.line{
+  height:10%;
+  width: 90%;
+  background-color: #fff;
+  margin-top: 7px;
+  border-radius: 100px;
+  transition: 0.3s;
+}
+.name{
+  margin-top:18px;
+  transform: rotate(45deg);
+  height:12%;
+}
+.name2{
+  margin-top:-5px;
+  transform: rotate(-45deg);
+  height:12%;
+}
+.name3{
+  margin-top:-5px;
+  transform: rotate(-45deg);
+  height:12%;
+}
+div#pullout{
+  position: fixed;
+  top: 50px;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: white;
+  transition: 0.3s;
+}
+.out{
+  width:280px!important;
+  box-shadow: -5px 0 5px #dedede;
 }
