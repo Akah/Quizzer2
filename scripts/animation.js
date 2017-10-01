@@ -1,12 +1,16 @@
+//document.querySelector('#menu').onclick = function(){ this.toggle }
+
+function open(){
+  document.querySelector('.line:nth-child(1)').classList.toggle('name');
+  document.querySelector('.line:nth-child(2)').classList.toggle('name2');
+  document.querySelector('.line:nth-child(3)').classList.toggle('name3');
+  document.querySelector('#pullout').classList.toggle('out');
+}
 document.querySelector('#menu').onclick = function(){
-  var topbun = document.querySelector('.line:nth-child(1)');
-  var filling = document.querySelector('.line:nth-child(2)');
-  var bottombun = document.querySelector('.line:nth-child(3)');
-  var menu = document.querySelector('#pullout');
-
-  topbun.classList.toggle('name');
-  filling.classList.toggle('name2');
-  bottombun.classList.toggle('name3');
-
-  menu.classList.toggle('out');
+  open();
+}
+document.querySelector('.inner').onclick = function(){
+  if(document.querySelector('.name')!==null){
+    open();
+  }
 }

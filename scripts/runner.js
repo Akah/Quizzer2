@@ -1,7 +1,7 @@
 var quiz = {
   name:"first-quiz",
   question:["one","two","three","four"],
-  trueAnswer:[0,1,2,3],
+  trueAnswer:[1,2,3,4],
   answers:[
     ["1","2","3","4",],
     ["1","2","3","4",],
