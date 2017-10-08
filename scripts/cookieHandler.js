@@ -2,12 +2,10 @@ function newCookie(name, value){
   document.cookie = name+"="+value+";";
   return document.cookie;
 }
-
 function deleteCookie(name){
   document.cookie = name+"=;expires=Thu, 01 Jan 1970 00:00:00 UTC;";
   return document.cookie;
 }
-
 function getCookie(name){
   var decoded = decodeURIComponent(document.cookie);
   var cookie = decoded.split('; ');
